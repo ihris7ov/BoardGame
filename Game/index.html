@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Do Not Get Annoyed</title>
+    <link href="index-styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body onabort="game-script">
+    <div class="main">
+        <div id="pop-up-message">Roll the dice!</div>
+        <section id="message">
+            <p>
+                CURRENT PLAYER:
+            </p>
+            <span id="current-player-color"></span>
+            <button id="finish">FINISH</button>
+        </section>
+        <section id="board">
+            <img src="images/pale-red-circle.png" id="position-0" />
+            <div id="div_position_0"></div>
+            <img src="images/white-circle.png" id="position-1" />
+            <div id="div_position_1"></div>
+            <img src="images/white-circle.png" id="position-2" />
+            <div id="div_position_2"></div>
+            <img src="images/white-circle.png" id="position-3" />
+            <div id="div_position_3"></div>
+            <img src="images/white-circle.png" id="position-4" />
+            <div id="div_position_4"></div>
+            <img src="images/white-circle.png" id="position-5" />
+            <div id="div_position_5"></div>
+            <img src="images/white-circle.png" id="position-6" />
+            <div id="div_position_6"></div>
+            <img src="images/white-circle.png" id="position-7" />
+            <div id="div_position_7"></div>
+            <img src="images/white-circle.png" id="position-8" />
+            <div id="div_position_8"></div>
+            <img src="images/white-circle.png" id="position-9" />
+            <div id="div_position_9"></div>
+            <img src="images/pale-blue-circle.png" id="position-10"/>
+            <div id="div_position_10"></div>
+            <img src="images/white-circle.png" id="position-11" />
+            <div id="div_position_11"></div>
+            <img src="images/white-circle.png" id="position-12" />
+            <div id="div_position_12"></div>
+            <img src="images/white-circle.png" id="position-13" />
+            <div id="div_position_13"></div>
+            <img src="images/white-circle.png" id="position-14" />
+            <div id="div_position_14"></div>
+            <img src="images/white-circle.png" id="position-15" />
+            <div id="div_position_15"></div>
+            <img src="images/white-circle.png" id="position-16" />
+            <div id="div_position_16"></div>
+            <img src="images/white-circle.png" id="position-17" />
+            <div id="div_position_17"></div>
+            <img src="images/white-circle.png" id="position-18" />
+            <div id="div_position_18"></div>
+            <img src="images/white-circle.png" id="position-19" />
+            <div id="div_position_19"></div>
+            <img src="images/pale-green-circle.png" id="position-20" />
+            <div id="div_position_20"></div>
+            <img src="images/white-circle.png" id="position-21" />
+            <div id="div_position_21"></div>
+            <img src="images/white-circle.png" id="position-22" />
+            <div id="div_position_22"></div>
+            <img src="images/white-circle.png" id="position-23" />
+            <div id="div_position_23"></div>
+            <img src="images/white-circle.png" id="position-24" />
+            <div id="div_position_24"></div>
+            <img src="images/white-circle.png" id="position-25" />
+            <div id="div_position_25"></div>
+            <img src="images/white-circle.png" id="position-26" />
+            <div id="div_position_26"></div>
+            <img src="images/white-circle.png" id="position-27" />
+            <div id="div_position_27"></div>
+            <img src="images/white-circle.png" id="position-28" />
+            <div id="div_position_28"></div>
+            <img src="images/white-circle.png" id="position-29" />
+            <div id="div_position_29"></div>
+            <img src="images/pale-yellow-circle.png" id="position-30" />
+            <div id="div_position_30"></div>
+            <img src="images/white-circle.png" id="position-31" />
+            <div id="div_position_31"></div>
+            <img src="images/white-circle.png" id="position-32" />
+            <div id="div_position_32"></div>
+            <img src="images/white-circle.png" id="position-33" />
+            <div id="div_position_33"></div>
+            <img src="images/white-circle.png" id="position-34" />
+            <div id="div_position_34"></div>
+            <img src="images/white-circle.png" id="position-35" />
+            <div id="div_position_35"></div>
+            <img src="images/white-circle.png" id="position-36" />
+            <div id="div_position_36"></div>
+            <img src="images/white-circle.png" id="position-37" />
+            <div id="div_position_37"></div>
+            <img src="images/white-circle.png" id="position-38" />
+            <div id="div_position_38"></div>
+            <img src="images/white-circle.png" id="position-39" />
+            <div id="div_position_39"></div>
+            <img src="images/red-circle.png" id="red-in-0" />
+            <img src="images/red-circle.png" id="red-in-1" />
+            <img src="images/red-circle.png" id="red-in-2" />
+            <img src="images/red-circle.png" id="red-in-3" />
+            <img src="images/blue-circle.png" id="blue-in-0" />
+            <img src="images/blue-circle.png" id="blue-in-1" />
+            <img src="images/blue-circle.png" id="blue-in-2" />
+            <img src="images/blue-circle.png" id="blue-in-3" />
+            <img src="images/green-circle.png" id="green-in-0" />
+            <img src="images/green-circle.png" id="green-in-1" />
+            <img src="images/green-circle.png" id="green-in-2" />
+            <img src="images/green-circle.png" id="green-in-3" />
+            <img src="images/yellow-circle.png" id="yellow-in-0" />
+            <img src="images/yellow-circle.png" id="yellow-in-1" />
+            <img src="images/yellow-circle.png" id="yellow-in-2" />
+            <img src="images/yellow-circle.png" id="yellow-in-3" />
+            <img src="images/red-star-pale-red-circle.png" id="red_piece_1" />
+            <img src="images/red-star-pale-red-circle.png" id="red_piece_2" />
+            <img src="images/red-star-pale-red-circle.png" id="red_piece_3" />
+            <img src="images/red-star-pale-red-circle.png" id="red_piece_4" />
+            <img src="images/blue-star-pale-blue-circle.png" id="blue_piece_1" />
+            <img src="images/blue-star-pale-blue-circle.png" id="blue_piece_2" />
+            <img src="images/blue-star-pale-blue-circle.png" id="blue_piece_3" />
+            <img src="images/blue-star-pale-blue-circle.png" id="blue_piece_4" />
+            <img src="images/green-star-pale-green-circle.png" id="green_piece_1" />
+            <img src="images/green-star-pale-green-circle.png" id="green_piece_2" />
+            <img src="images/green-star-pale-green-circle.png" id="green_piece_3" />
+            <img src="images/green-star-pale-green-circle.png" id="green_piece_4" />
+            <img src="images/yellow-star-pale-yellow-circle.png" id="yellow_piece_1" />
+            <img src="images/yellow-star-pale-yellow-circle.png" id="yellow_piece_2" />
+            <img src="images/yellow-star-pale-yellow-circle.png" id="yellow_piece_3" />
+            <img src="images/yellow-star-pale-yellow-circle.png" id="yellow_piece_4" />
+            <img src="images/arrow-right.png" id="arrow-right" />
+            <img src="images/arrow-down.png" id="arrow-down" />
+            <img src="images/arrow-left.png" id="arrow-left" />
+            <img src="images/arrow-up.png" id="arrow-up" />
+            <img src="images/dice-0.png" id="red-player-dice" class="active"/>
+            <img src="images/dice-0.png" id="blue-player-dice" />
+            <img src="images/dice-0.png" id="green-player-dice" />
+            <img src="images/dice-0.png" id="yellow-player-dice" />
+        </section>
+        <script>
+            $.getScript('game-script.js', function(){});
+        </script>
+    </div>
+</body>
+</html>
